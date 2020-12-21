@@ -3,6 +3,11 @@ package ItemInfo;
 public class BaseItem {
 
     /**
+     * 项目名称
+     */
+    private String name;
+
+    /**
      * 项目锻炼需要的时间
      */
     private int exerciseTime;
@@ -17,7 +22,8 @@ public class BaseItem {
      */
     private int restTime;
 
-    public BaseItem(int exerciseTime, String music, int restTime) {
+    public BaseItem(String name, int exerciseTime, String music, int restTime) {
+        this.name = name;
         this.exerciseTime = exerciseTime;
         this.music = music;
         this.restTime = restTime;
@@ -45,5 +51,13 @@ public class BaseItem {
 
     public void setRestTime(int restTime) {
         this.restTime = restTime;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
     }
 }

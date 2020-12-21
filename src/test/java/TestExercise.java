@@ -9,10 +9,10 @@ public class TestExercise {
         BootProgram bootProgram = new BootProgram();
 
         bootProgram
-                .add(new KuoXiongItem(30, "", 0))
-                .add(new TaiTuiItem(60, "", 0))
-                .add(new ChaJiaoItem(30, "", 0))
-                .add(new QianTiaoItem(30, "", 0));
+                .add(new BaseItem("KuoXiong",30, "", 0))
+                .add(new BaseItem("TaiTui",60, "", 0))
+                .add(new BaseItem("ChaJiao",30, "", 0))
+                .add(new BaseItem("QianTiao",30, "", 0));
 
         bootProgram.begin(3, "");
     }
