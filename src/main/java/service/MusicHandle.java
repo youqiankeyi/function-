@@ -9,5 +9,5 @@ public interface MusicHandle {
      *
      * @param musicName
      */
-    public void custMusic(String musicName, int beginTime, int endTime);
+    public void cutMusic(String musicName, int beginTime, int endTime);
 }

@@ -60,4 +60,14 @@ public class BaseItem {
     public void setName(String name) {
         this.name = name;
     }
+
+    @Override
+    public String toString() {
+        return "BaseItem{" +
+                "name='" + name + '\'' +
+                ", exerciseTime=" + exerciseTime +
+                ", music='" + music + '\'' +
+                ", restTime=" + restTime +
+                '}';
+    }
 }

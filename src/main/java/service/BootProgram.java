@@ -1,5 +1,7 @@
 package service;
 
+import ItemInfo.BaseItem;
+
 public interface BootProgram {
 
     /**
@@ -7,6 +9,9 @@ public interface BootProgram {
      * @param beginMusic 准备提示音乐
      */
     public void begin(int delayTime, String beginMusic);
+
+
+    public BootProgram add(BaseItem baseItem);
 
 
 }
