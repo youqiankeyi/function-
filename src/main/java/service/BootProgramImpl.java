@@ -4,6 +4,7 @@ import ItemInfo.BaseItem;
 
 import java.util.LinkedList;
 import java.util.Queue;
+import java.util.concurrent.TimeUnit;
 
 
 public class BootProgramImpl implements BootProgram {
@@ -20,7 +21,7 @@ public class BootProgramImpl implements BootProgram {
                 musicHandle.cutMusic(beginMusic, delayTime, 0);
                 int exerciseTime = item.getExerciseTime();
                 musicHandle.cutMusic(item.getMusic(), exerciseTime, 60 + exerciseTime);
-                Thread.sleep(item.getRestTime() * 1000);
+                TimeUnit.SECONDS.sleep(item.getRestTime());
             }
         } catch (InterruptedException e) {
 
